@@ -22,7 +22,7 @@ private class TestChatterPulse {
             
             //Comment on the post
             FeedComment fc = new FeedComment();
-            fc.CommentBody = 'Commenton the test post';
+            fc.CommentBody = 'This is a comment on the test post';
             fc.FeedItemId = fi.id;
             insert fc;            
             
