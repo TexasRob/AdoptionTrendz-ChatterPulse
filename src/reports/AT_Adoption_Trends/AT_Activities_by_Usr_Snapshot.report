@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>User$Username</field>
+    </columns>
+    <columns>
+        <field>User$Name</field>
+    </columns>
+    <columns>
+        <field>User.Activity$LastModifiedById$LastModifiedDate</field>
+    </columns>
+    <columns>
+        <field>User.Activity$LastModifiedById$ActivityDate</field>
+    </columns>
+    <columns>
+        <field>User.Activity$LastModifiedById$Who</field>
+    </columns>
+    <columns>
+        <field>User.Activity$LastModifiedById$Subject</field>
+    </columns>
+    <description>Source report used to create daily snapshots of add/edit activity on the Task/Event object</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User$Id</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>AT: Activities by User (Snapshot)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AT_Activities_by_User__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>User.Activity$LastModifiedById$LastModifiedDate</dateColumn>
+        <interval>INTERVAL_TODAY</interval>
+    </timeFrameFilter>
+</Report>

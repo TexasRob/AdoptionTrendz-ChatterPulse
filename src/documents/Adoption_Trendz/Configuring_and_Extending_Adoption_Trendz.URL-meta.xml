@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Video walk-through of Adoption Trendz. The first half of the presentation focuses on configuring the package and the second half focuses on extending Adoption Trendz to track statistics on your custom objects.</description>
+    <internalUseOnly>false</internalUseOnly>
+    <name>Configuring and Extending Adoption Trendz</name>
+    <public>false</public>
+</Document>

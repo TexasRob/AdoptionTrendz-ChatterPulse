@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnalyticSnapshot xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Adoption statistics for Tasks and Events</description>
+    <groupColumn>User$Id</groupColumn>
+    <mappings>
+        <sourceField>ExecutionTime</sourceField>
+        <sourceType>snapshot</sourceType>
+        <targetField>AT_Adoption_Trend__c.Snapshot_Date__c</targetField>
+    </mappings>
+    <mappings>
+        <sourceField>JobName</sourceField>
+        <sourceType>snapshot</sourceType>
+        <targetField>AT_Adoption_Trend__c.Object__c</targetField>
+    </mappings>
+    <mappings>
+        <sourceField>RowCount</sourceField>
+        <sourceType>summary</sourceType>
+        <targetField>AT_Adoption_Trend__c.Record_Count__c</targetField>
+    </mappings>
+    <mappings>
+        <sourceField>User$Id</sourceField>
+        <sourceType>tabular</sourceType>
+        <targetField>AT_Adoption_Trend__c.Editing_User__c</targetField>
+    </mappings>
+    <name>AT: Activities</name>
+    <runningUser>rgura@chatterpulse.labs</runningUser>
+    <sourceReport>AT_Adoption_Trends/AT_Activities_by_Usr_Snapshot</sourceReport>
+    <targetObject>AT_Adoption_Trend__c</targetObject>
+</AnalyticSnapshot>

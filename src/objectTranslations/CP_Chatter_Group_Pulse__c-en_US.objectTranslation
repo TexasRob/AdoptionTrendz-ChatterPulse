@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Chatter Pulse - Groups</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Chatter Pulse - Groups</value>
+    </caseValues>
+    <fields>
+        <label><!-- Comment Count --></label>
+        <name>Comment_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feed Count --></label>
+        <name>Feed_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group Name --></label>
+        <name>Group_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Like Count --></label>
+        <name>Like_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Member Count --></label>
+        <name>Member_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Snapshot Date --></label>
+        <name>Snapshot_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Group Activity --></label>
+        <name>Total_Group_Activity__c</name>
+    </fields>
+    <layouts>
+        <layout>CP: Chatter Group Trends Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

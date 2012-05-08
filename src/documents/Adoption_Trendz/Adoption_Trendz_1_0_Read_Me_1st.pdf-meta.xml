@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Administrators - Please read this important document regarding the configuration of the Adoption Trends Package</description>
+    <internalUseOnly>true</internalUseOnly>
+    <name>Adoption Trendz 1.0 - Read Me 1st</name>
+    <public>false</public>
+</Document>

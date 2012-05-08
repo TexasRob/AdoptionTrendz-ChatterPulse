@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Chatter Pulse</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Chatter Pulse</value>
+    </caseValues>
+    <fields>
+        <label><!-- Chatter User --></label>
+        <name>Chatter_User__c</name>
+        <relationshipLabel><!-- Chatter Pulse --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Related Record --></label>
+        <name>Related_Record__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reporting Date --></label>
+        <name>Reporting_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Update Type --></label>
+        <name>Update_Type__c</name>
+    </fields>
+    <layouts>
+        <layout>CP: Chatter Pulse Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

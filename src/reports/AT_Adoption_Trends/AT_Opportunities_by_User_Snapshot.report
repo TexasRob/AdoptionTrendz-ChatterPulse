@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>User$Username</field>
+    </columns>
+    <columns>
+        <field>User$Name</field>
+    </columns>
+    <columns>
+        <field>User.Opportunity$LastModifiedById$LastModifiedDate</field>
+    </columns>
+    <columns>
+        <field>User.Opportunity$LastModifiedById$Name</field>
+    </columns>
+    <description>Source report used to create daily snapshots of add/edit activity on the Opportunity object</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User$Id</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>AT: Opportunities by User (Snapshot)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AT_Opportunities_by_User__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>User.Opportunity$LastModifiedById$LastModifiedDate</dateColumn>
+        <interval>INTERVAL_TODAY</interval>
+    </timeFrameFilter>
+</Report>
