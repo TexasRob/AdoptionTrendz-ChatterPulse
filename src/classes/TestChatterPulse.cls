@@ -63,7 +63,7 @@ private class TestChatterPulse {
 		
 		for(User u: users) {
 			system.runas(u){
-				//Create a group as the Chatter Free user
+				//Create a group, as the Chatter Free user
 				CollaborationGroup grp= new CollaborationGroup();
 				grp.Name = 'This is a test group';
 				grp.CollaborationType = 'Public';                    
@@ -79,7 +79,7 @@ private class TestChatterPulse {
             	FeedComment fc = new FeedComment();
             	fc.CommentBody = 'Commenton the test comment';
             	fc.FeedItemId = fi.id;
-            	insert fc;   
+            	insert fc;
 			}
 		}
   		Test.stopTest();

@@ -1,12 +1,9 @@
 trigger ChatterPulseUserStatusUpdates on User (before update) {
-    
-    for (Integer i = 0; i < trigger.new.size(); i++)
-    {
-        if (trigger.old[i].CurrentStatus != trigger.new[i].CurrentStatus)
-        {
-            ChatterPulseUser.PulseAdd(Trigger.newMap.keySet());
+
+	for (User u : Trigger.new) { //for all records
+    	if (u.CurrentStatus != Trigger.oldMap.get(u.Id).CurrentStatus) { //was the status updated?
+        	ChatterPulseUser.PulseAdd(Trigger.newMap.keySet());
         }
-    }
-    
+    }    
     
 }
